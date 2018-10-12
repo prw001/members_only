@@ -1,0 +1,15 @@
+<title>New Post</title>
+
+<h1>Create a new post</h1>
+
+<div>
+	<%= form_for(:post, url: posts_path) do |f| %>
+
+		<%= f.label :content %>
+		<%= f.text_area :content %>
+
+		<%= f.hidden_field :author, :value => @user.name %>
+
+		<%= f.submit "Post!" %>
+	<% end %>
+</div>

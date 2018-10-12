@@ -1,0 +1,13 @@
+<title>All Posts</title>
+
+<h1>All Posts</h1>
+<div>
+	<% posts = Post.all %>
+	<% posts.each do |p| %>
+		<!-- add validation to see authors here -->
+		<br>
+		<p><%= p.author %> wrote:</p>
+		<p><%= p.content %></p>
+		<br>
+	<% end %>
+</div>
