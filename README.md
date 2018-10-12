@@ -1,24 +1,7 @@
-# README
+Created in response to an assignment from The Odin Project (task #2):
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://www.theodinproject.com/lessons/authentication
 
-Things you may want to cover:
+Essentially a gossip app, allowing outsiders to see what is said, but not who said it, unless they sign up or log in.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+-in progress, will be deployed to heroku in later stages-
