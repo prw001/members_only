@@ -1,12 +1,22 @@
 <title>All Posts</title>
+<div>
+	<% if logged_in? %>
+		<%= link_to "Log out", logout_path, method: "delete" %>
+	<% else %>
+		<%= link_to "Log in", login_path, method: "get" %>
+	<% end %>
+</div>
 
 <h1>All Posts</h1>
 <div>
 	<% posts = Post.all %>
 	<% posts.each do |p| %>
-		<!-- add validation to see authors here -->
 		<br>
-		<p><%= p.author %> wrote:</p>
+		<% if logged_in? %>
+			<p><%= p.author %> wrote:</p>
+		<% else %>
+			<p>Anonymous wrote:</p>
+		<% end %>
 		<p><%= p.content %></p>
 		<br>
 	<% end %>
